@@ -1,0 +1,170 @@
+*{
+    margin: 0px auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
+}
+.container{
+    width: 75%;
+   
+}
+header{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+.headerUp{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, .like, .city, .search, .user{
+    display: flex;
+    align-items: center;
+}
+#inputChange{
+    width: 450px;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    background-image: url(img/search.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: rgba(128, 128, 128, 0.116);
+    border: 0px;
+    outline: none;
+}
+.headerDown{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+    margin-top: 2%;
+}
+.navbar{
+    width: 80%;
+    position: absolute;
+    overflow-wrap: normal;
+    left: 50%;
+    transform:translate(-50%);
+}
+.navbar li{
+    display: inline-block; 
+    text-align: center; 
+    list-style: none;  
+    padding: 0;
+    margin-left: 5%;
+}
+.navbar li a{
+    text-decoration: none; 
+    color: black;
+    padding: 7px;
+}
+.navbar li a:hover{
+    background-color: rgba(128, 128, 128, 0.274);
+    border-radius: 25px;
+}
+.arrow{
+    position: absolute;
+    right: 10%;
+}
+.navigation{
+    width: 100%;
+    margin-top: 1%;
+}
+.navigation span{
+    margin-left: 1%;
+}
+.navigation img{
+    margin-left: 1%;
+
+}
+.imgCard{
+    margin-top: 3%;
+}
+.imgCard img{
+    width: 100%;
+}
+.contetnCardUp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contetnCardUpImg{
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+}
+#Name{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 3%;
+}
+#btnLike{
+    width: 170px;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    background-image: url(img/like.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: rgba(128, 128, 128, 0.116);
+    border: 0px;
+    outline: none;
+}
+.raiting{
+    font-weight: bold;
+}
+.contetnCardDown{
+    display: flex;
+    justify-content: flex-start;
+}
+.info{
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+}
+.infoLeft{
+    width: 30%;
+}
+.infoRight{
+    width: 69%;
+}
+.infoRight{
+    width: 100% ;
+    display: flex;
+}
+.containers{
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+}
+.containerOne, .ContainerTwo{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.226);
+    border-radius: 10px;
+}
+.frame{
+    display: flex;
+    flex-direction: column;
+}
+.frameName{
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+}
+.infoText{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
