@@ -12,44 +12,46 @@
   <body>
     <div>
     <div class="container">
-    <header>
-      <div class="headerUp">
-        <div class="logo">
-          <img src="img/logo.png" alt="">
+      <header>
+        <div class="headerUp">
+          <div class="logo">
+            <img src="img/logo.png" alt="">
+          </div>
+          <div class="city">
+            <img src="img/city.png" alt="">
+            <span>Москва</span>
+          </div>
+          <div class="search">
+            <input type="text" placeholder="Учебное заведение, специальность или профессия" id="inputChange">
+          </div>
+          <div class="like">
+            <img src="img/like.png" alt="">
+            <span>1</span>
+          </div>
+          <div class="user">
+            <span>Екатерина</span>
+            <img src="img/avatar.png" alt="">
+          </div>
         </div>
-        <div class="city">
-          <img src="img/city.png" alt="">
-          <span>Москва</span>
+        <div class="headerDown">
+          <ul class="navbar">
+            <li><a href="">Вузы</a></li>
+            <li><a href="">Колледжи</a></li>
+            <li><a href="">Техникумы</a></li>
+            <li><a href="">Училища</a></li>
+            <li><a href="">Специальности</a></li>
+            <li><a href="">Профессии</a></li>
+            <li><a href="">Отзывы</a></li>
+            <li><a href="">Учебным заведениям</a></li>
+            <li><a href="">Тест на профориентацию</a></li>
+          </ul>
+          <div class="arrow">
+            <img src="img/Vector.png" alt="">
+          </div>
         </div>
-        <div class="search">
-          <input type="text" placeholder="Учебное заведение, специальность или профессия" id="inputChange">
-        </div>
-        <div class="like">
-          <img src="img/like.png" alt="">
-          <span>1</span>
-        </div>
-        <div class="user">
-          <span>Екатерина</span>
-          <img src="img/avatar.png" alt="">
-        </div>
-      </div>
-      <div class="headerDown">
-        <ul class="navbar">
-          <li><a href="">Вузы</a></li>
-          <li><a href="">Колледжи</a></li>
-          <li><a href="">Техникумы</a></li>
-          <li><a href="">Училища</a></li>
-          <li><a href="">Специальности</a></li>
-          <li><a href="">Профессии</a></li>
-          <li><a href="">Отзывы</a></li>
-          <li><a href="">Учебным заведениям</a></li>
-          <li><a href="">Тест на профориентацию</a></li>
-        </ul>
-        <div class="arrow">
-          <img src="img/Vector.png" alt="">
-        </div>
-      </div>
-    </header>
+      </header>
+      <div class="content">
+
     <div class="navigation">
       <span>Москва</span>
       <img src="img/Vector.png" alt="">
@@ -61,12 +63,15 @@
     </div>
     <div class="cardContainer">
       <div class="imgCard">
-        <img src="img/kMOe1_J4cJ0.jpg" alt="">
+        <img src="img/photo (2).png" alt="">
       </div>
       <div class="contetnCard">
         <div class="contetnCardUp">
-          <p id="Name">Московский государственный технический <br>
-            университет имени Н.Э. Бáумана</p>
+          <div class="contetnCardUpP">
+            <p id="Name">Московский государственный технический <br>
+              университет имени Н.Э. Бáумана</p>
+          </div>
+
             <div class="contetnCardUpImg">
               <button id="btnLike">В избранное</button>
               <img src="img/bell.png" alt="">
@@ -74,6 +79,7 @@
             </div>
         </div>
         <div class="contetnCardDown">
+          <div class="contetnCardDownContent">
           <div>
             <img src="img/Vector1.png" alt="">
             <span class="raiting">2.4</span>
@@ -88,26 +94,33 @@
             <span class="textGray">Приёмная комиссия: 7(499)1812133</span>
           </div>
         </div>
-        <div class="contetnCardFooter"></div>
+      </div>
+      <div class="contetnCardFooter">
+        <div>
+        <p>Обновлено 11.11.2011</p>
+        <p id="error">Сообщить об ошибке</p>
+      </div>
+      </div>
       </div>
     </div>
     <div class="info">
       <div class="infoLeft">
         <div class="infoText">
-          <span>Основная информация</span>
-          <button>100</button>
+          <div class="contact"><span>Основная информация</span></div>
+          <div class="btnPrice"><button>100</button></div>
         </div>
         <div class="infoText">
-          <span>Специальности</span>
-          <button>100</button>
+          <div class="contact"><span>Специальности</span></div>
+          <div class="btnPrice"><button>100</button></div>
         </div>
         <div class="infoText">
-          <span>Об университете</span>
-          <button>100</button>
+          <div class="contact"><span>Об университете</span></div>
+          <div class="btnPrice"><button>100</button></div>
         </div>
         <div class="infoText">
-          <span>Контакты</span>
-          <button>100</button>
+          <div class="contact"><span>Контакты</span></div>
+          <div class="btnPrice"><button>100</button></div>
+          
         </div>
       </div>
       <div class="infoRight">
@@ -135,6 +148,7 @@
       </div>
       </div>
     </div>
+  </div>
   </div>
     <script src="index.js"></script>
   </body>

@@ -7,8 +7,12 @@
     font-weight: 400;
 }
 .container{
-    width: 75%;
-   
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.205);
+   padding-bottom: 2%;
+}
+.content{
+    width: 1024px;
 }
 header{
     margin-top: 10px;
@@ -20,7 +24,7 @@ header{
 }
 .headerUp{
     display: flex;
-    width: 100%;
+    width: 1024px;
     justify-content: space-between;
     align-items: center;
 }
@@ -49,11 +53,11 @@ header{
     margin-top: 2%;
 }
 .navbar{
-    width: 80%;
+    width: 1024px;
     position: absolute;
-    overflow-wrap: normal;
     left: 50%;
     transform:translate(-50%);
+
 }
 .navbar li{
     display: inline-block; 
@@ -87,25 +91,33 @@ header{
 
 }
 .imgCard{
-    margin-top: 3%;
+    width: 100%;
+    margin-top: 2%;
 }
 .imgCard img{
     width: 100%;
+}
+.cardContainer{
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
 }
 .contetnCardUp{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+.contetnCardUpP{
+    width: 70%;
+    text-align: start;
+}
 .contetnCardUpImg{
     display: flex;
     align-items: center;
-    margin-right: 3%;
 }
 #Name{
     font-size: 25px;
     font-weight: bold;
-    margin-left: 3%;
 }
 #btnLike{
     width: 170px;
@@ -123,9 +135,16 @@ header{
     font-weight: bold;
 }
 .contetnCardDown{
+    width: 100%;
     display: flex;
     justify-content: flex-start;
 }
+.contetnCardDownContent{
+    display: flex;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
 .info{
     width: 100%;
     display: flex;
@@ -146,11 +165,27 @@ header{
     display: flex;
     margin-top: 2%;
 }
+.contetnCardFooter{
+    width: 90%;
+}
+.contetnCardFooter div{
+    width: 60%;
+    display: flex;
+    margin-left: 60%;
+    padding-bottom: 1%;
+}
+.contetnCardFooter p{
+    margin-left: 1%;
+}
+#error{
+    color: blue;
+    font-weight: bold;
+}
 .containerOne, .ContainerTwo{
     width: 40%;
     display: flex;
     align-items: center;
-    background-color: rgba(128, 128, 128, 0.226);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
 .frame{
@@ -164,7 +199,25 @@ header{
 }
 .infoText{
     width: 100%;
-    border: 1px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+.contact{
+    width: 90%;
+    text-align: start;
+}
+
+.btnPrice{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btnPrice button{
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: gray;
 }
