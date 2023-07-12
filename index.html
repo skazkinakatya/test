@@ -4,22 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <title>Студика</title>
+    <link type="image/png" sizes="96x96" rel="icon" href="img/icons8-студент-96.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div>
     <div class="container">
       <header>
         <div class="headerUp">
+          
           <div class="logo">
             <img src="img/logo.png" alt="">
           </div>
+          <img src="img/free-icon-menu-4254068.png" alt="" class="imgMenuHeaderUp hidden">
           <div class="city">
-            <img src="img/city.png" alt="">
-            <span>Москва</span>
+            <img src="img/city.png" alt="" id="logoCity">
+            <span id="sity">Москва</span>
           </div>
           <div class="search">
             <input type="text" placeholder="Учебное заведение, специальность или профессия" id="inputChange">
@@ -34,9 +36,11 @@
           </div>
         </div>
         <div class="headerDown">
+          <img src="img/free-icon-menu-4254068.png" alt="" class="imgMenu hidden">
+            <img src="img/Vector.png" alt="" class="arrowLeft hidden">
           <ul class="navbar">
-            <li><a href="">Вузы</a></li>
-            <li><a href="">Колледжи</a></li>
+            <li ><a href="" id="University">Вузы</a></li>
+            <li ><a href="" id="Collage">Колледжи</a></li>
             <li><a href="">Техникумы</a></li>
             <li><a href="">Училища</a></li>
             <li><a href="">Специальности</a></li>
@@ -44,12 +48,20 @@
             <li><a href="">Отзывы</a></li>
             <li><a href="">Учебным заведениям</a></li>
             <li><a href="">Тест на профориентацию</a></li>
+            <li ><a href=""class="hidden" id="Feedback" >Обратная связь</a></li>
+            <li ><a href="" class="hidden" id="Document" >Документация</a></li>
           </ul>
-          <div class="arrow">
-            <img src="img/Vector.png" alt="">
-          </div>
+            <img src="img/Vector.png" alt="" class="arrowRight">
+
         </div>
       </header>
+      <div class="foundSities hidden">
+        <input type="text" placeholder="Регион, город, населённый пункт" id="searchSity">
+        <div class="searchResults">
+          <!-- Сюда выводятся города -->
+        </div>
+        
+    </div>
       <div class="content">
 
     <div class="navigation">
@@ -80,24 +92,24 @@
         </div>
         <div class="contetnCardDown">
           <div class="contetnCardDownContent">
-          <div>
+          <div class="raitingWithStar">
             <img src="img/Vector1.png" alt="">
             <span class="raiting">2.4</span>
             <span class="textGray">(75 отзывов)</span>
           </div>
-          <div>
-            <img src="img/divider.png" alt="">
+          <div class="conteinerForText">
+            <img src="img/divider.png" alt="" class="circle">
             <span class="textGray">Москва, ул. Новочеремушкинская, д.69</span>
           </div>
-          <div>
-            <img src="img/divider.png" alt="">
+          <div class="conteinerForText">
+            <img src="img/divider.png" alt="" class="circle">
             <span class="textGray">Приёмная комиссия: 7(499)1812133</span>
           </div>
         </div>
       </div>
       <div class="contetnCardFooter">
         <div>
-        <p>Обновлено 11.11.2011</p>
+        <p id="reset">Обновлено 11.11.2011</p>
         <p id="error">Сообщить об ошибке</p>
       </div>
       </div>
@@ -148,7 +160,6 @@
       </div>
       </div>
     </div>
-  </div>
   </div>
     <script src="index.js"></script>
   </body>

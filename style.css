@@ -9,10 +9,10 @@
 .container{
     width: 100%;
     background-color: rgba(128, 128, 128, 0.205);
-   padding-bottom: 2%;
+    padding-bottom: 2%;
 }
 .content{
-    width: 1024px;
+    width: 1440px;
 }
 header{
     margin-top: 10px;
@@ -21,10 +21,11 @@ header{
     justify-content: center;
     flex-direction: column;
     background-color: white;
+    align-items: center;
 }
 .headerUp{
     display: flex;
-    width: 1024px;
+    width: 1440px;
     justify-content: space-between;
     align-items: center;
 }
@@ -45,39 +46,105 @@ header{
     border: 0px;
     outline: none;
 }
+#logoCity{
+    width: 30px;
+}
+.imgMenuHeaderUp{
+    width: 30px;
+}
 .headerDown{
     display: flex;
     align-items: center;
-    margin: 20px;
+    justify-content: space-between;
     width: 100%;
     margin-top: 2%;
 }
+.imgMenu{
+   width: 30px;
+}
 .navbar{
-    width: 1024px;
-    position: absolute;
-    left: 50%;
-    transform:translate(-50%);
-
+    width: 90%;
+    display: flex; 
 }
 .navbar li{
-    display: inline-block; 
     text-align: center; 
     list-style: none;  
     padding: 0;
-    margin-left: 5%;
+    padding-bottom: 20px;
+    margin-left: 1%;
+    width: max-content;
 }
 .navbar li a{
     text-decoration: none; 
     color: black;
-    padding: 7px;
+    padding: 5px;
+    font-size: 15px;
 }
 .navbar li a:hover{
     background-color: rgba(128, 128, 128, 0.274);
     border-radius: 25px;
 }
-.arrow{
+.arrowLeft{
     position: absolute;
-    right: 10%;
+    top: 92px;
+    left:150px;
+    transform: rotate(180deg);
+}
+.arrowRight{
+    position: absolute;
+    right:150px;
+    top: 92px;
+}
+
+.shown{
+    display: block;
+}
+.flex{
+    display: flex;
+}
+.hidden{
+    display: none;
+}
+.foundSities{
+    position: absolute;
+    background: #fff;
+    width: max-content;
+    height: 300px;
+    color: #000;
+    top: 105px;
+    left: 400px;
+    z-index: 100;
+    border-radius: 10px;
+    box-shadow: 0px 7px 38px 0px rgba(44, 62, 106, 0.25);
+    font-size: 0.9rem;
+    transition: all .3s ease;
+    transform: translateY(-50px);
+    overflow-y: scroll;
+}
+#searchSity{
+    width: 260px;
+    border-radius: 10px;
+    outline: none;
+    width: 300px;
+    padding: 1rem 1.2rem;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    background: #f1f1f1;
+    outline-color: #ABC8EA;
+    margin-top: 15px;
+}
+.searchResults div{
+   display: flex;
+   flex-direction: column;
+   padding: 5px;
+}
+.searchResults div span{
+    margin-left: 10px;
+}
+mark{
+    background-color: transparent;
+    color: blue;
+    font-weight: bolder;
 }
 .navigation{
     width: 100%;
@@ -171,7 +238,7 @@ header{
 .contetnCardFooter div{
     width: 60%;
     display: flex;
-    margin-left: 60%;
+    margin-left: 50%;
     padding-bottom: 1%;
 }
 .contetnCardFooter p{
@@ -220,4 +287,196 @@ header{
     border: none;
     border-radius: 5px;
     color: gray;
+}
+@media (min-width: 1199px) and (max-width: 1440px){
+    .content{
+        width: 1024px;
+        padding: 50px;
+    }
+    .headerUp{
+        width: 1024px;
+    }
+    .navbar li a{
+        font-size: 11px;
+    }
+    .arrowLeft{
+        position: absolute;
+        left:80px;
+        transform: rotate(180deg);
+        top: 80px;
+    }
+    .arrowRight{
+        position: absolute;
+        right:80px;
+        top: 80px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .content{
+        width: 992px;
+        padding: 50px;
+    }
+    .headerUp{
+        width: 992px;
+    }
+    .navbar li a{
+        font-size: 10px;
+    }
+    .arrowLeft{
+        position: absolute;
+        left:50px;
+        transform: rotate(180deg);
+        top: 80px;
+    }
+    .arrowRight{
+        position: absolute;
+        right:50px;
+        top: 80px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .navbar{
+        display: none;
+    }
+    .content{
+        width: 768px;
+        padding: 50px;
+    }
+    #Name{
+        font-size: 13px;
+        margin-left: 2%;
+    }
+    .textGray{
+        font-size: 10px;
+    }
+    .contetnCardFooter p{
+        font-size: 10px;
+    }
+    #btnLike{
+        width: 120px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .navigation{
+        margin-top: 0%;
+    }
+    .contact span{
+        font-size: 11px;
+    }
+    .btnPrice button{
+        width: 40px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .frame span{
+        font-size: 11PX;
+    }
+    .frameName{
+        font-size: 15px;
+    }
+    .arrow img{
+        display: none;
+    }
+    .headerUp{
+        width: 768px;
+    }
+    .arrowRight{
+        display: none;
+    }
+    #inputChange{
+        display: none;
+    }
+    .imgMenu{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 767px){
+    .content{
+        width: 100%;
+        padding: 50px;
+    }
+    .headerUp{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .headerDown{
+       display: none;
+    }
+    .arrowRight{
+        display: none;
+    }
+    #inputChange{
+        display: none;
+    }
+    #Name{
+        font-size: 10px;
+        margin-left: 2%;
+    }
+    .textGray{
+        font-size: 9px;
+    }
+    .contetnCardFooter p{
+        font-size: 10px;
+    }
+    #btnLike{
+        display: none;
+    }
+    .frame span{
+        font-size: 10PX;
+    }
+    .frameName{
+        font-size: 12px;
+    }
+    #reset, #error{
+        font-size: 7px;
+    }
+    .textGray{
+       font-size: 10px;
+    }
+    .navigation{
+        display: none;
+    }
+    .circle{
+        display: none;
+    }
+    .user{
+        display: none;
+    }
+    .city{
+        display: none;
+    }
+    .cardContainer{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .content{
+        width: 100%;
+        padding: 0px;
+    }
+    .contetnCardDownContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .raitingWithStar{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .conteinerForText{
+        width: 100%;
+        text-align: start;
+    }
+    .infoLeft{
+        display: none;
+    }
+    .infoRight{
+        height: 100px;
+    }
+    .imgMenuHeaderUp{
+        display: flex;
+    }
+
 }
